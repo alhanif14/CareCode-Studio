@@ -1,4 +1,6 @@
-# Logs
+# =======================================
+# DEPENDENCIES & LOGS
+# =======================================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,55 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# =======================================
+# BUILD & DEPLOY OUTPUT
+# =======================================
+build/
+.next/
+out/
+.vercel/
+.cache/
+coverage/
+
+# =======================================
+# ENVIRONMENT VARIABLES
+# =======================================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# =======================================
+# EDITOR & SYSTEM FILES
+# =======================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# =======================================
+# IDE SETTINGS
+# =======================================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.idea/
+*.code-workspace
+
+# =======================================
+# TEST FILES
+# =======================================
+jest-html-reporters-*.html
+coverage-final.json
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
