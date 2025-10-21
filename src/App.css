@@ -1,0 +1,135 @@
+:root {
+  /* CareCode Studio Color Palette */
+  --color-primary: hsl(208, 50%, 30%);
+  --color-secondary: #5BA67B;
+  --color-accent: #89BF7A;
+  --color-highlight: #C2F279;
+  --color-dark: #0D0D0D;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 0 30px rgba(194, 242, 121, 0.15);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-in-out;
+} 
+
+/* Fade & Slide In */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+
+/* ===== Global Body Styling ===== */
+body {
+  background-color: var(--color-dark);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Navbar Glass Effect ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(16px);
+  background: var(--glass-bg);
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  z-index: 1000;
+}
+
+/* ===== Logo & Links ===== */
+.navbar .logo img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s;
+}
+
+.navbar a:hover {
+  color: var(--color-secondary);
+}
+
+
+/* ===== Glass Section Card ===== */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: var(--glass-shadow);
+  padding: 2rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: linear-gradient(180deg, #0c0f1b 0%, #1b2735 100%);
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
