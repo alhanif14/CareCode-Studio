@@ -48,7 +48,7 @@ export default function Navbar() {
         <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <ul className="flex gap-6 text-white font-medium">
             <li><a href="#services">{t("navbar.services")}</a></li>
-            <li><a href="#portfolio">{t("navbar.portfolio")}</a></li>
+            <li><a href="#why">{t("navbar.why")}</a></li>
             <li><a href="#collaborate">{t("navbar.collaborate")}</a></li>
             <li><a href="#faq">{t("navbar.faq")}</a></li>
             <li><a href="#pricing">{t("navbar.pricing")}</a></li>
@@ -159,8 +159,8 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="#portfolio" onClick={handleMobileLinkClick}>
-                  {t("navbar.portfolio")}
+                <a href="#why" onClick={handleMobileLinkClick}>
+                  {t("navbar.why")}
                 </a>
               </li>
               <li>
