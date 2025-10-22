@@ -11,5 +11,48 @@
   "hero.start": "Mulai Proyek",
   "hero.faq": "FAQ",
 
-  "footer.rights": "Seluruh hak cipta dilindungi."
+  "footer.rights": "Seluruh hak cipta dilindungi.",
+
+  "services.title": "Layanan Kami",
+  "services.subtitle": "Dari web hingga IoT — wujudkan ide Anda bersama kami.",
+  "services.web": "Pembuatan Website",
+  "services.web.desc": "Website modern, cepat, dan responsif untuk brand Anda.",
+  "services.application": "Pengembangan Aplikasi",
+  "services.application.desc": "Aplikasi mobile & desktop yang powerful sesuai kebutuhan.",
+  "services.uiux": "Desain UI/UX",
+  "services.uiux.desc": "Antarmuka yang cantik, intuitif, dan berfokus pada pengguna.",
+  "services.iot": "Internet of Things (IoT)",
+  "services.iot.desc": "Sistem IoT pintar yang menghubungkan perangkat secara mulus.",
+  "services.hardware": "Layanan Perangkat Keras",
+  "services.hardware.desc": "Hardware kustom, perbaikan, dan integrasi.",
+  "services.automation": "Alur Otomasi",
+  "services.automation.desc": "Otomasi workflow dengan sistem cerdas.",
+  "services.more": "Dan Masih Banyak Lagi",
+  "services.more.desc": "Mari diskusikan proyek Anda — semua bisa diwujudkan.",
+  "services.more.cta": "Ayo diskusi",
+  "services.web.f1": "Responsif & siap SEO",
+  "services.web.f2": "Performa cepat",
+  "services.web.f3": "Opsi CMS / Headless",
+  
+  "services.app.f1": "Lintas platform (iOS, Android, Web)",
+  "services.app.f2": "UX seperti aplikasi native",
+  "services.app.f3": "Integrasi API",
+
+  "services.uiux.f1": "Alur pengguna & Wireframing",
+  "services.uiux.f2": "Prototipe high-fidelity",
+  "services.uiux.f3": "Sistem desain (Design system)",
+
+  "services.iot.f1": "Integrasi perangkat",
+  "services.iot.f2": "Protokol MQTT / HTTP",
+  "services.iot.f3": "Sinkronisasi data cloud",
+
+  "services.hw.f1": "Diagnostik & perbaikan",
+  "services.hw.f2": "PCB kustom / prototipe",
+  "services.hw.f3": "Integrasi komponen",
+
+  "services.auto.f1": "Otomatisasi alur kerja bisnis",
+  "services.auto.f2": "Scripting & pemicu kustom",
+  "services.auto.f3": "Pemantauan real-time",
+
+  "services.more.f1": "Punya proyek kustom? Ayo diskusi."
 }

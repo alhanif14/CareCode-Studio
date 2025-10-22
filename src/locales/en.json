@@ -11,6 +11,48 @@
   "hero.start": "Start Project",
   "hero.faq": "FAQ",
 
-  "footer.rights": "All rights reserved."
+  "footer.rights": "All rights reserved.",
 
+  "services.title": "Our Services",
+  "services.subtitle": "From web to IoT — we bring your ideas to life.",
+  "services.web": "Website",
+  "services.web.desc": "Modern, fast, and responsive websites for your brand.",
+  "services.application": "Application",
+  "services.application.desc": "Powerful mobile & desktop apps tailored to your needs.",
+  "services.uiux": "UI/UX Design",
+  "services.uiux.desc": "Beautiful, intuitive, and user-centric interfaces.",
+  "services.iot": "Internet of Things (IoT)",
+  "services.iot.desc": "Smart IoT systems that connect devices seamlessly.",
+  "services.hardware": "Hardware Service",
+  "services.hardware.desc": "Custom hardware, repair, and integration.",
+  "services.automation": "Automation Flow",
+  "services.automation.desc": "Automate your workflow with intelligent systems.",
+  "services.more": "And Many More",
+  "services.more.desc": "Let's discuss your next project — anything is possible.",
+  "services.more.cta": "Let's talk",
+  "services.web.f1": "Responsive & SEO-ready",
+  "services.web.f2": "Fast performance",
+  "services.web.f3": "CMS / Headless options",
+  
+  "services.app.f1": "Cross-platform (iOS, Android, Web)",
+  "services.app.f2": "Native-like UX",
+  "services.app.f3": "API integration",
+
+  "services.uiux.f1": "User flows & Wireframing",
+  "services.uiux.f2": "High-fidelity prototype",
+  "services.uiux.f3": "Design systems",
+
+  "services.iot.f1": "Device integration",
+  "services.iot.f2": "MQTT / HTTP protocols",
+  "services.iot.f3": "Cloud data sync",
+
+  "services.hw.f1": "Diagnostics & repair",
+  "services.hw.f2": "Custom PCB / prototyping",
+  "services.hw.f3": "Component integration",
+
+  "services.auto.f1": "Business workflow automation",
+  "services.auto.f2": "Custom scripting & triggers",
+  "services.auto.f3": "Real-time monitoring",
+
+  "services.more.f1": "Custom project? Let's discuss."
 }

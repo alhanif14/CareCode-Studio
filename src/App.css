@@ -205,3 +205,34 @@ body {
     background-position: -200% 0;
   }
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-gradient-border {
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.more-card-animated {
+  background: linear-gradient(90deg, rgba(0,198,255,0.18), rgba(91,166,123,0.14));
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .swiper-slide > .relative[style] {
+    min-height: 520px !important;
+  }
+}
+

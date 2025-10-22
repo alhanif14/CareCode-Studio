@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import Services from "./components/Services";
+import Services from "./components/Services";
+import GlobalBackground from "./components/GlobalBackground";
 // import Why from "./components/Why";
 // import Collaborate from "./components/Collaborate";
 // import FAQ from "./components/FAQ";
@@ -11,10 +12,11 @@ import "./App.css";
 function App() {
   return (
     <>
+      <GlobalBackground />
       <Navbar />
       <Hero />
-      {/* <Services />
-      <Why />
+      <Services />
+      {/* <Why />
       <Collaborate />
       <FAQ />
       <Pricing /> */}
