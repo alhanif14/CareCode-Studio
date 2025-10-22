@@ -9,5 +9,8 @@
   "hero.title": "Welcome to CareCode Studio",
   "hero.subtitle": "We build, fix, and elevate your digital presence with web, IoT, and hardware services.",
   "hero.start": "Start Project",
-  "hero.faq": "FAQ"
+  "hero.faq": "FAQ",
+
+  "footer.rights": "All rights reserved."
+
 }

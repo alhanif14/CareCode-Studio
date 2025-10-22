@@ -9,5 +9,7 @@
   "hero.title": "Selamat Datang di CareCode Studio",
   "hero.subtitle": "Kami membangun, memperbaiki, dan meningkatkan kehadiran digital Anda melalui layanan web, IoT, dan perangkat keras.",
   "hero.start": "Mulai Proyek",
-  "hero.faq": "FAQ"
+  "hero.faq": "FAQ",
+
+  "footer.rights": "Seluruh hak cipta dilindungi."
 }

@@ -12,7 +12,7 @@ export default function Hero() {
   const animationFrameId = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => setFade((f) => !f), 6000);
+    const interval = setInterval(() => setFade((f) => !f), 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -55,14 +55,14 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen px-6 md:px-16 pt-36 md:pt-44 text-white overflow-hidden"
+      className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen px-6 md:px-16 pt-36 md:pt-20 text-white overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           ref={dotPatternRef}
-          animate={{ opacity: fade ? 0.3 : 0.15 }}
-          transition={{ duration: 3, ease: "easeInOut" }}
+          animate={{ opacity: fade ? 0.7 : 0.3 }}
+          transition={{ duration: 2, ease: "easeInOut" }}
           className="absolute inset-0"
           
           style={{

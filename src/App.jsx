@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 // import Collaborate from "./components/Collaborate";
 // import FAQ from "./components/FAQ";
 // import Pricing from "./components/Pricing";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
       <Portfolio />
       <Collaborate />
       <FAQ />
-      <Pricing />
-      <Footer /> */}
+      <Pricing /> */}
+      <Footer />
     </>
   );
 }
