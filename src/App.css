@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* CareCode Studio Color Palette */
   --color-primary: hsl(208, 50%, 30%);
@@ -100,6 +104,9 @@ body {
   color: var(--color-highlight);
 }
 
+.navbar a.active {
+  color: var(--color-highlight) !important;
+}
 
 /* ===== Glass Section Card ===== */
 .glass-card {

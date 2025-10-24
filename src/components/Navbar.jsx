@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import logoFull from "../assets/logo-full.png";
 
@@ -9,6 +9,7 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const languages = [
     { code: "en", name: "English", short: "EN", flag: flagEN },
@@ -28,13 +29,42 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   };
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const handleMobileLinkClick = () => setIsMobileMenuOpen(false);
 
-  const handleMobileLinkClick = () => {
-    setIsMobileMenuOpen(false);
-  };
+  useEffect(() => {
+    const sectionIds = ["services", "why", "collaborate", "faq", "pricing"];
+    const sections = sectionIds.map((id) => document.getElementById(id));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let visibleSection = "";
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) visibleSection = entry.target.id;
+        });
+        setActiveSection(visibleSection);
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((sec) => sec && observer.observe(sec));
+    return () => observer.disconnect();
+  }, []);
+
+const desktopLinkClass = (id) =>
+  `relative transition font-medium px-1 pb-1 group ${
+    activeSection === id
+      ? "text-[var(--color-highlight)]"
+      : "text-white/70 hover:text-[var(--color-highlight)]"
+  }`;
+
+
+  const mobileLinkClass = (id) =>
+    `flex items-center gap-3 w-full text-left px-4 py-3 text-lg text-white rounded-lg transition ${
+      activeSection === id
+        ? "bg-white/10 border border-white/10"
+        : "hover:bg-white/10"
+    }`;
 
   return (
     <>
@@ -47,11 +77,20 @@ export default function Navbar() {
         {/* Menu (Desktop) */}
         <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <ul className="flex gap-6 text-white font-medium">
-            <li><a href="#services">{t("navbar.services")}</a></li>
-            <li><a href="#why">{t("navbar.why")}</a></li>
-            <li><a href="#collaborate">{t("navbar.collaborate")}</a></li>
-            <li><a href="#faq">{t("navbar.faq")}</a></li>
-            <li><a href="#pricing">{t("navbar.pricing")}</a></li>
+            {["services", "why", "collaborate", "faq", "pricing"].map((id) => (
+              <li key={id} className="relative">
+                <a href={`#${id}`} className={`${desktopLinkClass(id)} ${activeSection === id ? "active" : ""}`}>
+                  <span className="relative z-10">{t(`navbar.${id}`)}</span>
+                  <span
+                    className={`absolute left-0 bottom-0 h-[2px] rounded-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-highlight)] transition-all duration-500 ease-out origin-center ${
+                      activeSection === id
+                        ? "w-full opacity-100 scale-x-100"
+                        : "w-0 opacity-0 scale-x-0 group-hover:w-full group-hover:opacity-100 group-hover:scale-x-100"
+                    }`}
+                  ></span>
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -88,7 +127,7 @@ export default function Navbar() {
             </button>
 
             {isLangOpen && (
-              <div className="absolute right-0 mt-2 w-44 bg-neutral-900 border border-white/10 rounded-md shadow-lg">
+              <div className="absolute right-0 mt-2 w-44 bg-neutral-900 border border-white/10 rounded-md shadow-lg animate-slideDown">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
@@ -153,31 +192,19 @@ export default function Navbar() {
         <div className="flex flex-col gap-8 p-8">
           <nav>
             <ul className="flex flex-col gap-6 text-2xl font-medium">
-              <li>
-                <a href="#services" onClick={handleMobileLinkClick}>
-                  {t("navbar.services")}
-                </a>
-              </li>
-              <li>
-                <a href="#why" onClick={handleMobileLinkClick}>
-                  {t("navbar.why")}
-                </a>
-              </li>
-              <li>
-                <a href="#collaborate" onClick={handleMobileLinkClick}>
-                  {t("navbar.collaborate")}
-                </a>
-              </li>
-              <li>
-                <a href="#faq" onClick={handleMobileLinkClick}>
-                  {t("navbar.faq")}
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" onClick={handleMobileLinkClick}>
-                  {t("navbar.pricing")}
-                </a>
-              </li>
+              {["services", "why", "collaborate", "faq", "pricing"].map(
+                (id) => (
+                  <li key={id}>
+                    <a
+                      href={`#${id}`}
+                      onClick={handleMobileLinkClick}
+                      className={mobileLinkClass(id)}
+                    >
+                      {t(`navbar.${id}`)}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </nav>
 
