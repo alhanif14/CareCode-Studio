@@ -33,7 +33,7 @@ export default function Navbar() {
   const handleMobileLinkClick = () => setIsMobileMenuOpen(false);
 
   useEffect(() => {
-    const sectionIds = ["services", "why", "collaborate", "faq", "pricing"];
+    const sectionIds = ["services", "why", "pricing", "collaborate", "faq"];
     const sections = sectionIds.map((id) => document.getElementById(id));
 
     const observer = new IntersectionObserver(
@@ -77,7 +77,7 @@ const desktopLinkClass = (id) =>
         {/* Menu (Desktop) */}
         <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <ul className="flex gap-6 text-white font-medium">
-            {["services", "why", "collaborate", "faq", "pricing"].map((id) => (
+            {["services", "why", "pricing", "collaborate", "faq"].map((id) => (
               <li key={id} className="relative">
                 <a href={`#${id}`} className={`${desktopLinkClass(id)} ${activeSection === id ? "active" : ""}`}>
                   <span className="relative z-10">{t(`navbar.${id}`)}</span>
@@ -192,7 +192,7 @@ const desktopLinkClass = (id) =>
         <div className="flex flex-col gap-8 p-8">
           <nav>
             <ul className="flex flex-col gap-6 text-2xl font-medium">
-              {["services", "why", "collaborate", "faq", "pricing"].map(
+              {["services", "why", "pricing", "collaborate", "faq"].map(
                 (id) => (
                   <li key={id}>
                     <a

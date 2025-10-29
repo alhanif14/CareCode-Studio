@@ -8,46 +8,38 @@ export default function GlobalBackground() {
   const currentSpotlightPos = useRef({ x: -999, y: -999 });
   const animationFrameId = useRef(null);
 
-  // Scroll refs
+  // Scroll & wave states
   const scrollY = useRef(0);
   const smoothScrollY = useRef(0);
+  const maskPos = useRef({ m1: 0, m2: 30, m3: 60, m4: 90 });
+  const t = useRef(0);
 
-  const maskPos = useRef({
-    m1: 0,
-    m2: 30,
-    m3: 60,
-    m4: 90,
-  });
-
-  // Fade animation loop
+  // Fade loop
   useEffect(() => {
     const interval = setInterval(() => setFade((f) => !f), 4000);
     return () => clearInterval(interval);
   }, []);
 
-  // Smooth mouse spotlight
+  // Smooth spotlight follow
   useEffect(() => {
-    const easeFactor = 0.15;
+    const ease = 0.15;
     const animateSpotlight = () => {
-      const { x: targetX, y: targetY } = targetMousePos.current;
-      const { x: currentX, y: currentY } = currentSpotlightPos.current;
-      const newX = currentX + (targetX - currentX) * easeFactor;
-      const newY = currentY + (targetY - currentY) * easeFactor;
+      const { x: tx, y: ty } = targetMousePos.current;
+      const { x: cx, y: cy } = currentSpotlightPos.current;
+      const newX = cx + (tx - cx) * ease;
+      const newY = cy + (ty - cy) * ease;
       currentSpotlightPos.current = { x: newX, y: newY };
-
       if (dotPatternRef.current) {
         dotPatternRef.current.style.setProperty("--mouse-x", `${newX}px`);
         dotPatternRef.current.style.setProperty("--mouse-y", `${newY}px`);
       }
-
       animationFrameId.current = requestAnimationFrame(animateSpotlight);
     };
-
     animationFrameId.current = requestAnimationFrame(animateSpotlight);
     return () => cancelAnimationFrame(animationFrameId.current);
   }, []);
 
-  // Track mouse movement
+  // Track mouse
   useEffect(() => {
     const handleMouseMove = (e) => {
       targetMousePos.current = { x: e.clientX, y: e.clientY };
@@ -56,19 +48,22 @@ export default function GlobalBackground() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+  // Scroll + wave motion
   useEffect(() => {
     const handleScroll = () => {
       scrollY.current = window.scrollY;
     };
 
-    const smoothScroll = () => {
+    const animate = () => {
+      t.current += 0.01; // wave time
       smoothScrollY.current += (scrollY.current - smoothScrollY.current) * 0.1;
+      const s = smoothScrollY.current;
 
       if (dotPatternRef.current) {
-        const s = smoothScrollY.current;
-
+        // subtle parallax scroll
         dotPatternRef.current.style.backgroundPosition = `0px ${-s * 0.2}px`;
 
+        // base target positions
         const target = {
           m1: (s * 0.05) % 100,
           m2: (s * 0.07 + 30) % 100,
@@ -76,22 +71,35 @@ export default function GlobalBackground() {
           m4: (s * 0.09 + 90) % 100,
         };
 
+        // sinusoidal waves for natural drift
+        const wave = {
+          m1: Math.sin(t.current * 0.7) * 8,
+          m2: Math.cos(t.current * 0.9) * 10,
+          m3: Math.sin(t.current * 0.6 + 2) * 6,
+          m4: Math.cos(t.current * 0.8 + 1) * 9,
+        };
+
+        // smooth ease
         const ease = 0.05;
         for (let key in maskPos.current) {
-          maskPos.current[key] += (target[key] - maskPos.current[key]) * ease;
+          maskPos.current[key] +=
+            (target[key] + wave[key] - maskPos.current[key]) * ease;
         }
 
-        dotPatternRef.current.style.setProperty("--mask1-x", `${maskPos.current.m1}%`);
-        dotPatternRef.current.style.setProperty("--mask2-x", `${maskPos.current.m2}%`);
-        dotPatternRef.current.style.setProperty("--mask3-x", `${maskPos.current.m3}%`);
-        dotPatternRef.current.style.setProperty("--mask4-x", `${maskPos.current.m4}%`);
+        // apply mask positions
+        for (let i = 1; i <= 4; i++) {
+          dotPatternRef.current.style.setProperty(
+            `--mask${i}-x`,
+            `${maskPos.current[`m${i}`]}%`
+          );
+        }
       }
 
-      requestAnimationFrame(smoothScroll);
+      requestAnimationFrame(animate);
     };
 
     window.addEventListener("scroll", handleScroll);
-    requestAnimationFrame(smoothScroll);
+    requestAnimationFrame(animate);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

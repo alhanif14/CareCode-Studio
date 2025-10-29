@@ -72,7 +72,7 @@ export default function Services() {
       <div className="container mx-auto">
         {/* Title */}
         <div className="max-w-3xl mx-auto text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-highlight)]">
             {t("services.title")}
           </h2>
           {t("services.subtitle") && (

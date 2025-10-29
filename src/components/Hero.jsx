@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import HeroIllustration from "../assets/hero-illustration.png";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -72,9 +73,9 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <motion.img
-          src="/assets/hero-illustration.png"
+          src={HeroIllustration}
           alt="CareCode illustration"
-          className="max-w-[380px] md:max-w-[520px] object-contain drop-shadow-2xl"
+          className="max-w-[300px] md:max-w-[400px] object-contain drop-shadow-2xl"
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         />

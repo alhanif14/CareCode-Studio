@@ -54,5 +54,16 @@
   "services.auto.f2": "Scripting & pemicu kustom",
   "services.auto.f3": "Pemantauan real-time",
 
-  "services.more.f1": "Punya proyek kustom? Ayo diskusi."
+  "services.more.f1": "Punya proyek kustom? Ayo diskusi.",
+
+  "why.title": "Kenapa Memilih Kami",
+  "why.subtitle": "Kami menghadirkan kualitas, fleksibilitas, dan dedikasi di setiap proyek.",
+  "why.1.title": "Tim Profesional",
+  "why.1.desc": "Developer dan desainer kami adalah profesional berpengalaman di industri.",
+  "why.2.title": "Harga Terjangkau",
+  "why.2.desc": "Hasil berkualitas tinggi dengan harga bersahabat untuk startup.",
+  "why.3.title": "Cepat & Fleksibel",
+  "why.3.desc": "Pengerjaan tepat waktu dengan fleksibilitas revisi penuh.",
+  "why.4.title": "Permintaan Kustom",
+  "why.4.desc": "Kami menyesuaikan workflow sesuai kebutuhan unik Anda."
 }

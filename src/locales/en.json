@@ -54,5 +54,16 @@
   "services.auto.f2": "Custom scripting & triggers",
   "services.auto.f3": "Real-time monitoring",
 
-  "services.more.f1": "Custom project? Let's discuss."
+  "services.more.f1": "Custom project? Let's discuss.",
+
+  "why.title": "Why Choose Us",
+  "why.subtitle": "We bring quality, flexibility, and dedication to every project.",
+  "why.1.title": "Professional Team",
+  "why.1.desc": "Our developers and designers are industry-experienced professionals.",
+  "why.2.title": "Affordable Pricing",
+  "why.2.desc": "High-quality results at startup-friendly rates.",
+  "why.3.title": "Fast & Flexible",
+  "why.3.desc": "On-time delivery with full revision flexibility.",
+  "why.4.title": "Customizable Request",
+  "why.4.desc": "We adapt our workflow to your unique needs."
 }
