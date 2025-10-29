@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
     }),
   };
 
-  const highlightColorRGB = "194, 242, 121"; // #C2F279
+  const highlightColorRGB = "194, 242, 121";
 
   return (
     <section id="why" className="relative py-28 px-6 sm:px-8 md:px-0 overflow-hidden">
@@ -48,7 +48,6 @@ export default function WhyChooseUs() {
       </p>
 
       <div className="relative max-w-5xl mx-auto px-4 md:px-0">
-        {/* Glowing vertical line (desktop only) */}
         <motion.div
           className="hidden md:block absolute left-1/2 top-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[var(--color-highlight)]/50 to-transparent"
           style={{
@@ -68,7 +67,6 @@ export default function WhyChooseUs() {
           }}
         />
 
-        {/* Feature blocks */}
         {[1, 2, 3, 4].map((num, i) => (
           <motion.div
             key={num}
@@ -80,7 +78,6 @@ export default function WhyChooseUs() {
             animate={controls}
             custom={i}
           >
-            {/* Number background */}
             <span
               className={`absolute font-bold leading-none select-none -z-10 top-1/2 -translate-y-1/2 
               text-[6rem] sm:text-[8rem] md:text-[10rem] 

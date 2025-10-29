@@ -65,5 +65,22 @@
   "why.3.title": "Cepat & Fleksibel",
   "why.3.desc": "Pengerjaan tepat waktu dengan fleksibilitas revisi penuh.",
   "why.4.title": "Permintaan Kustom",
-  "why.4.desc": "Kami menyesuaikan workflow sesuai kebutuhan unik Anda."
+  "why.4.desc": "Kami menyesuaikan workflow sesuai kebutuhan unik Anda.",
+
+"pricing": {
+    "title": "Harga Jelas & Terjangkau",
+    "subtitle": "Dapatkan kualitas premium tanpa menguras kantong. Kami menawarkan harga transparan yang disesuaikan dengan kebutuhan Anda.",
+    "card": {
+      "title": "Satu Harga Tidak Cocok Untuk Semua",
+      "desc": "Karena setiap proyek itu unik, kami memberikan penawaran khusus setelah memahami tujuan Anda. Tanpa biaya tersembunyi, tanpa kejutan.",
+      "f1": "Estimasi Transparan",
+      "f2": "Jaminan Kualitas",
+      "f3": "Konsultasi Awal Gratis",
+      "cta": "Dapatkan Penawaran Gratis",
+      "start": "Mulai Dari",
+      "price": "RP 49.000,-",
+      "unit": "untuk tugas sederhana"
+    }
+  } 
+
 }

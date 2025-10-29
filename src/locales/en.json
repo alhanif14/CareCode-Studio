@@ -65,5 +65,21 @@
   "why.3.title": "Fast & Flexible",
   "why.3.desc": "On-time delivery with full revision flexibility.",
   "why.4.title": "Customizable Request",
-  "why.4.desc": "We adapt our workflow to your unique needs."
+  "why.4.desc": "We adapt our workflow to your unique needs.",
+
+  "pricing": {
+    "title": "Clear & Affordable Pricing",
+    "subtitle": "Get premium quality without breaking the bank. We offer transparent pricing tailored to your exact needs.",
+    "card": {
+      "title": "One Price Doesn't Fit All",
+      "desc": "Because every project is unique, we provide a custom quote after understanding your goals. No hidden fees, no surprises.",
+      "f1": "Transparent Estimates",
+      "f2": "Guaranteed Quality",
+      "f3": "Free Initial Consultation",
+      "cta": "Get a Free Quote",
+      "start": "Starts From",
+      "price": "IDR 49K",
+      "unit": "for simple tasks"
+    }
+  }
 }
