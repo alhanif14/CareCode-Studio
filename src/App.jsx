@@ -4,7 +4,7 @@ import Services from "./components/Services";
 import GlobalBackground from "./components/GlobalBackground";
 import Why from "./components/Why";
 import Pricing from "./components/Pricing";
-// import Collaborate from "./components/Collaborate";
+import Collaborate from "./components/Collaborate";
 // import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -18,7 +18,7 @@ function App() {
       <Services />
       <Why />
       <Pricing />
-      {/* <Collaborate /> */}
+      <Collaborate />
       {/* <FAQ /> */}
       <Footer />
     </>

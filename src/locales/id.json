@@ -81,6 +81,55 @@
       "price": "RP 49.000,-",
       "unit": "untuk tugas sederhana"
     }
-  } 
+  },
 
+  "collaborate": {
+    "title": "Cara Kita Berkolaborasi",
+    "subtitle": "Proses transparan dan terstruktur untuk memastikan kesuksesan proyek Anda dari awal hingga akhir.",
+    "toggle": {
+      "software": "Alur Digital (Web, App, IoT)",
+      "hardware": "Alur Hardware"
+    },
+    "contact_us": "Hubungi Kami",
+    "sw": {
+      "1": {
+        "title": "Konsultasi Awal",
+        "desc": "Kita mulai dengan mendiskusikan ide, tujuan, dan kebutuhan proyek Anda. Ini semua tentang memahami visi Anda."
+      },
+      "2": {
+        "title": "Proposal & Kesepakatan",
+        "desc": "Kami berikan proposal rinci (scope, waktu, harga, & DP). Setelah Anda setuju dan membayar DP, kami mulai bekerja."
+      },
+      "3": {
+        "title": "Pengembangan & Progres",
+        "desc": "Tim kami mulai bekerja. Kami akan memberikan update rutin sehingga Anda bisa memantau progres proyek."
+      },
+      "4": {
+        "title": "Peninjauan & Revisi",
+        "desc": "Kami mempresentasikan hasil akhir. Anda meninjau, dan kami melakukan revisi yang diperlukan untuk memastikannya sempurna."
+      },
+      "5": {
+        "title": "Peluncuran & Pelunasan",
+        "desc": "Setelah Anda 100% puas, kami akan men-deploy proyek dan menyerahkan semua aset setelah pelunasan diselesaikan."
+      }
+    },
+    "hw": {
+      "1": {
+        "title": "Konsultasi Awal",
+        "desc": "Beri tahu kami masalah hardware atau proyek yang Anda pikirkan. Kami akan menilai situasi dan kebutuhan."
+      },
+      "2": {
+        "title": "Meeting & Kesepakatan",
+        "desc": "Kami membahas detail, linimasa, dan memberikan penawaran harga yang jelas. Kita menyepakati persyaratan layanan."
+      },
+      "3": {
+        "title": "Layanan di Tempat (On-Site) / COD",
+        "desc": "Kami mengatur waktu untuk Cash-on-Delivery (COD) barang atau agar teknisi kami dapat bekerja langsung di lokasi Anda."
+      },
+      "4": {
+        "title": "Selesai & Pelunasan",
+        "desc": "Setelah layanan hardware berhasil diselesaikan, Anda melakukan pembayaran penuh langsung di tempat."
+      }
+    }
+  }
 }

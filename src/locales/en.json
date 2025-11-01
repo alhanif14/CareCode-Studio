@@ -81,5 +81,55 @@
       "price": "IDR 49K",
       "unit": "for simple tasks"
     }
+  },
+
+  "collaborate": {
+    "title": "How We Collaborate",
+    "subtitle": "A transparent and structured process to ensure your project's success from start to finish.",
+    "toggle": {
+      "software": "Digital Flow (Web, App, IoT)",
+      "hardware": "Hardware Flow"
+    },
+    "contact_us": "Contact Us",
+    "sw": {
+      "1": {
+        "title": "Initial Consultation",
+        "desc": "We start by discussing your project idea, goals, and requirements. It's all about understanding your vision."
+      },
+      "2": {
+        "title": "Proposal & Agreement",
+        "desc": "We provide a detailed proposal covering scope, timeline, price, and terms. After you agree and pay the DP, we start."
+      },
+      "3": {
+        "title": "Development & Progress",
+        "desc": "Our team gets to work. We provide regular updates so you can track the progress every step of the way."
+      },
+      "4": {
+        "title": "Review & Revisions",
+        "desc": "We present the final product. You review it, and we perform any necessary revisions to ensure it's perfect."
+      },
+      "5": {
+        "title": "Launch & Final Payment",
+        "desc": "Once you're 100% satisfied, we deploy the project and hand over all assets after the final payment is settled."
+      }
+    },
+    "hw": {
+      "1": {
+        "title": "Initial Consultation",
+        "desc": "Tell us about the hardware issue or project you have in mind. We'll assess the situation and requirements."
+      },
+      "2": {
+        "title": "Meeting & Agreement",
+        "desc": "We discuss the details, timeline, and provide a clear price quote. We agree on the terms for the service."
+      },
+      "3": {
+        "title": "On-Site or COD Service",
+        "desc": "We arrange a time for Cash-on-Delivery (COD) or for our technician to work on-site at your location."
+      },
+      "4": {
+        "title": "Completion & Payment",
+        "desc": "Once the hardware service is successfully completed, you make the full payment on the spot."
+      }
+    }
   }
 }
