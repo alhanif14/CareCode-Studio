@@ -131,5 +131,31 @@
         "desc": "Once the hardware service is successfully completed, you make the full payment on the spot."
       }
     }
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "subtitle": "Got questions? We've got answers. Click a bubble to find out.",
+    "placeholder": "Click one of the question bubbles above to see the answer here...",
+    "q1": {
+      "q": "What services do you offer?",
+      "a": "We offer a wide range of digital services, including Website development, Applications (Mobile & Desktop), UI/UX Design, Internet of Things (IoT), and Hardware Services. Check our 'Services' section for details!"
+    },
+    "q2": {
+      "q": "How much does it cost?",
+      "a": "Every project is unique. Our prices start from IDR 49K for simple tasks. For larger projects, we provide a custom quote after a free initial consultation."
+    },
+    "q3": {
+      "q": "How long does it take?",
+      "a": "Turnaround time depends on project complexity. A simple website might take a few days to a week, while a custom app could take several weeks or months. We'll provide a clear timeline in our proposal."
+    },
+    "q4": {
+      "q": "Can I request revisions?",
+      "a": "Absolutely! Flexibility is one of our strengths. Our process includes a 'Review & Revisions' stage where you can provide feedback before launch."
+    },
+    "q5": {
+      "q": "How do I get started?",
+      "a": "It's easy! Scroll to the 'How We Collaborate' section or just click the 'Start Project' / 'Contact Us' button. Simply tell us your idea, and we'll guide you through the next steps."
+    }
   }
 }

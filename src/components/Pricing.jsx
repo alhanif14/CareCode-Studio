@@ -104,17 +104,6 @@ export default function Pricing() {
       </li>
     ))}
       </ul>
-      <button
-    className="px-6 py-3 rounded-full font-semibold text-white 
-       bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] 
-       shadow-lg hover:opacity-90 active:scale-95 transition cursor-pointer"
-    onClick={() => {
-      const el = document.querySelector("#collaborate");
-      el?.scrollIntoView({ behavior: "smooth" });
-    }}
-      >
-    {t("pricing.card.cta")}
-      </button>
     </div>
 
     <div
