@@ -42,34 +42,37 @@ export default function FAQ() {
 
         {/* Bubble List */}
         <motion.div
-          className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mb-14 px-4"
+          className="grid grid-cols-2 md:flex md:flex-wrap justify-center items-center gap-4 md:gap-6 mb-14 px-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {FAQ_DATA.map((faq) => {
+          {FAQ_DATA.map((faq, index) => {
             const isActive = selectedKey === faq.key;
+            const isLast = index === FAQ_DATA.length - 1;
 
             return (
               <motion.button
                 key={faq.key}
                 variants={bubbleVariants}
                 onClick={() => setSelectedKey(faq.key)}
-                whileHover={{
-                  scale: 1.08,
-                  transition: { duration: 0.15, ease: "easeOut" },
-                }}
+                whileHover={{ scale: 1.08, transition: { duration: 0.15, ease: "easeOut" } }}
                 whileTap={{ scale: 0.95 }}
                 className={`
-                  group relative px-5 py-3 rounded-full text-sm md:text-base font-semibold
+                  group relative px-4 py-2 rounded-full 
+                  text-[12px] md:text-base font-semibold
                   transition-all duration-150 ease-out backdrop-blur-xl border shadow-lg
+
                   ${isActive
                     ? "text-white border-transparent bg-white/5"
                     : "text-white/80 bg-white/10 border-white/20"
                   }
+
+                  ${isLast ? "col-span-2 justify-self-center md:col-auto" : ""}
                 `}
               >
 
+                {/* Active glow */}
                 {isActive && (
                   <span
                     className="absolute inset-0 rounded-full opacity-30 blur-lg pointer-events-none"
@@ -80,6 +83,7 @@ export default function FAQ() {
                   />
                 )}
 
+                {/* Active gradient stroke */}
                 {isActive && (
                   <span
                     className="absolute inset-0 rounded-full pointer-events-none"
@@ -95,6 +99,7 @@ export default function FAQ() {
                   />
                 )}
 
+                {/* Hover gradient stroke */}
                 <span
                   className="
                     absolute inset-0 rounded-full opacity-0 

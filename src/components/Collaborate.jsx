@@ -14,70 +14,24 @@ import {
 } from "react-icons/fa";
 
 const SOFTWARE_STEPS = [
-  {
-    key: "sw1",
-    Icon: FaComments,
-    titleKey: "collaborate.sw.1.title",
-    descKey: "collaborate.sw.1.desc",
-  },
-  {
-    key: "sw2",
-    Icon: FaHandshake,
-    titleKey: "collaborate.sw.2.title",
-    descKey: "collaborate.sw.2.desc",
-  },
-  {
-    key: "sw3",
-    Icon: FaLaptopCode,
-    titleKey: "collaborate.sw.3.title",
-    descKey: "collaborate.sw.3.desc",
-  },
-  {
-    key: "sw4",
-    Icon: FaSyncAlt,
-    titleKey: "collaborate.sw.4.title",
-    descKey: "collaborate.sw.4.desc",
-  },
-  {
-    key: "sw5",
-    Icon: FaCheckDouble,
-    titleKey: "collaborate.sw.5.title",
-    descKey: "collaborate.sw.5.desc",
-  },
+  { key: "sw1", Icon: FaComments, titleKey: "collaborate.sw.1.title", descKey: "collaborate.sw.1.desc" },
+  { key: "sw2", Icon: FaHandshake, titleKey: "collaborate.sw.2.title", descKey: "collaborate.sw.2.desc" },
+  { key: "sw3", Icon: FaLaptopCode, titleKey: "collaborate.sw.3.title", descKey: "collaborate.sw.3.desc" },
+  { key: "sw4", Icon: FaSyncAlt, titleKey: "collaborate.sw.4.title", descKey: "collaborate.sw.4.desc" },
+  { key: "sw5", Icon: FaCheckDouble, titleKey: "collaborate.sw.5.title", descKey: "collaborate.sw.5.desc" },
 ];
 
 const HARDWARE_STEPS = [
-  {
-    key: "hw1",
-    Icon: FaComments,
-    titleKey: "collaborate.hw.1.title",
-    descKey: "collaborate.hw.1.desc",
-  },
-  {
-    key: "hw2",
-    Icon: FaHandshake,
-    titleKey: "collaborate.hw.2.title",
-    descKey: "collaborate.hw.2.desc",
-  },
-  {
-    key: "hw3",
-    Icon: FaMapMarkedAlt,
-    titleKey: "collaborate.hw.3.title",
-    descKey: "collaborate.hw.3.desc",
-  },
-  {
-    key: "hw4",
-    Icon: FaCreditCard,
-    titleKey: "collaborate.hw.4.title",
-    descKey: "collaborate.hw.4.desc",
-  },
+  { key: "hw1", Icon: FaComments, titleKey: "collaborate.hw.1.title", descKey: "collaborate.hw.1.desc" },
+  { key: "hw2", Icon: FaHandshake, titleKey: "collaborate.hw.2.title", descKey: "collaborate.hw.2.desc" },
+  { key: "hw3", Icon: FaMapMarkedAlt, titleKey: "collaborate.hw.3.title", descKey: "collaborate.hw.3.desc" },
+  { key: "hw4", Icon: FaCreditCard, titleKey: "collaborate.hw.4.title", descKey: "collaborate.hw.4.desc" },
 ];
 
 const gridVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
-    opacity: 1,
-    y: 0,
+    opacity: 1, y: 0,
     transition: {
       type: "spring",
       damping: 15,
@@ -86,11 +40,7 @@ const gridVariants = {
       staggerChildren: 0.1,
     },
   },
-  exit: {
-    opacity: 0,
-    y: -30,
-    transition: { duration: 0.2, ease: "easeOut" },
-  },
+  exit: { opacity: 0, y: -30, transition: { duration: 0.2 } },
 };
 
 const cardVariants = {
@@ -102,8 +52,7 @@ export default function Collaborate() {
   const { t } = useTranslation();
   const [activeFlow, setActiveFlow] = useState("software");
 
-  const currentSteps =
-    activeFlow === "software" ? SOFTWARE_STEPS : HARDWARE_STEPS;
+  const currentSteps = activeFlow === "software" ? SOFTWARE_STEPS : HARDWARE_STEPS;
 
   const getColSpan = (index) => {
     if (activeFlow === "software") {
@@ -113,7 +62,6 @@ export default function Collaborate() {
         case 2: return "md:col-span-1";
         case 3: return "md:col-span-2";
         case 4: return "md:col-span-3";
-        default: return "md:col-span-1";
       }
     } else {
       switch (index) {
@@ -121,17 +69,15 @@ export default function Collaborate() {
         case 1: return "md:col-span-2";
         case 2: return "md:col-span-2";
         case 3: return "md:col-span-1";
-        default: return "md:col-span-1";
       }
     }
+    return "md:col-span-1";
   };
 
   return (
-    <section
-      id="collaborate"
-      className="relative py-28 px-6 sm:px-8 overflow-hidden z-10"
-    >
+    <section id="collaborate" className="relative py-28 px-6 sm:px-8 overflow-hidden z-10">
       <div className="container mx-auto">
+
         {/* Title */}
         <motion.div
           className="max-w-3xl mx-auto text-center mb-12"
@@ -148,7 +94,7 @@ export default function Collaborate() {
           </p>
         </motion.div>
 
-        {/* Toggle Switch */}
+        {/* Toggle */}
         <div className="flex justify-center mb-12">
           <div className="flex bg-white/5 p-1.5 rounded-full backdrop-blur-sm">
             <ToggleButton
@@ -164,6 +110,7 @@ export default function Collaborate() {
           </div>
         </div>
 
+        {/* Step Cards */}
         <div className="relative max-w-6xl mx-auto min-h-[400px]">
           <AnimatePresence mode="wait">
             <motion.div
@@ -174,82 +121,75 @@ export default function Collaborate() {
               animate="visible"
               exit="exit"
             >
-              {currentSteps.map((step, index) => {
-                return (
-                  <motion.div
-                    key={step.key}
-                    className={`relative rounded-3xl ${getColSpan(index)}`}
-                    variants={cardVariants}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  >
-                    <div
-                      className="relative w-full h-full rounded-3xl overflow-hidden
-                                 border border-white/8 bg-gradient-to-b from-white/3 via-white/2 to-transparent
-                                 backdrop-blur-md"
-                    >
+              {currentSteps.map((step, index) => (
+                <motion.div
+                  key={step.key}
+                  className={`relative rounded-3xl ${getColSpan(index)}`}
+                  variants={cardVariants}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                  <div className="relative w-full h-full rounded-3xl overflow-hidden border border-white/8 bg-gradient-to-b from-white/3 via-white/2 to-transparent backdrop-blur-md">
+
+                    {/* Glow + Border */}
+                    <div aria-hidden className="absolute inset-0 rounded-3xl pointer-events-none opacity-80">
+                      <div className="absolute -inset-1 rounded-3xl blur-2xl"
+                        style={{
+                          background: "linear-gradient(120deg, rgba(0,198,255,0.10), rgba(91,166,123,0.10))",
+                        }}
+                      />
                       <div
-                        aria-hidden
-                        className="absolute inset-0 rounded-3xl pointer-events-none opacity-80"
-                      >
-                        <div
-                          className="absolute -inset-1 rounded-3xl"
-                          style={{
-                            background:
-                              "linear-gradient(120deg, rgba(0,198,255,0.10), rgba(91,166,123,0.10))",
-                            filter: "blur(20px)",
-                          }}
-                        />
-                        <div
-                          className="absolute inset-0 rounded-3xl"
-                          style={{
-                            border: "1.5px solid transparent",
-                            background:
-                              "linear-gradient(135deg, var(--color-primary), var(--color-secondary)) border-box",
-                            WebkitMask:
-                              "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
-                            WebkitMaskComposite: "xor",
-                            maskComposite: "exclude",
-                          }}
-                        />
-                      </div>
-
-                      <div className="relative z-10 p-6 md:p-8">
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-3">
-                          <div
-                            className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center
-                                     bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-black shadow-lg"
-                          >
-                            <step.Icon className="text-2xl" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-white">
-                            {t(step.titleKey)}
-                          </h3>
-                        </div>
-                        <p className="text-white/70 text-sm leading-relaxed">
-                          {t(step.descKey)}
-                        </p>
-
-                        {index === 0 && (
-                          <a
-                            href="mailto:carecodestudio@gmail.com"
-                            className="inline-flex items-center gap-2 px-3.5 py-2 mt-4 text-xs font-semibold
-                                       rounded-full bg-[var(--color-highlight)]/10 text-[var(--color-highlight)]
-                                       hover:bg-[var(--color-highlight)]/20 transition-colors"
-                          >
-                            <FaEnvelope />
-                            {t("collaborate.contact_us", "Hubungi Kami")}
-                          </a>
-                        )}
-
-                        {/* Ikon Panah */}
-                        {index < currentSteps.length - 1 && (
-                          <FaLongArrowAltRight className="absolute bottom-6 right-7 text-2xl text-white/30" />
-                        )}
-                      </div>
+                        className="absolute inset-0 rounded-3xl"
+                        style={{
+                          border: "1.5px solid transparent",
+                          background:
+                            "linear-gradient(135deg, var(--color-primary), var(--color-secondary)) border-box",
+                          WebkitMask:
+                            "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
+                          WebkitMaskComposite: "xor",
+                          maskComposite: "exclude",
+                        }}
+                      />
                     </div>
-                  </motion.div>
-                );
-              })}
+
+                    <div className="relative z-10 p-6 md:p-8">
+                      
+                      {/* TOP CONTENT */}
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-3">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-black shadow-lg">
+                          <step.Icon className="text-2xl" />
+                        </div>
+
+                        {/* TEXT SIZE SMALLER ON MOBILE */}
+                        <h3 className="text-lg sm:text-xl font-semibold text-white">
+                          {t(step.titleKey)}
+                        </h3>
+                      </div>
+
+                      <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
+                        {t(step.descKey)}
+                      </p>
+
+                      {/* Contact Button */}
+                      {index === 0 && (
+                        <a
+                          href="mailto:carecodestudio@gmail.com"
+                          className="inline-flex items-center gap-2 px-3.5 py-2 mt-4 text-xs font-semibold rounded-full bg-[var(--color-highlight)]/10 text-[var(--color-highlight)] hover:bg-[var(--color-highlight)]/20 transition-colors"
+                        >
+                          <FaEnvelope />
+                          {t("collaborate.contact_us")}
+                        </a>
+                      )}
+
+                      {/* ARROW — hidden on mobile */}
+                      {index < currentSteps.length - 1 && (
+                        <FaLongArrowAltRight
+                          className="hidden md:block absolute bottom-6 right-7 text-2xl text-white/30"
+                        />
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -262,12 +202,9 @@ function ToggleButton({ label, isActive, onClick }) {
   return (
     <button
       onClick={onClick}
-      className={`relative px-4 sm:px-6 py-2.5 rounded-full text-sm font-semibold transition-colors
-                  ${
-                    isActive
-                      ? "text-black"
-                      : "text-white/60 hover:text-white"
-                  }`}
+      className={`relative px-3 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-colors ${
+        isActive ? "text-black" : "text-white/60 hover:text-white"
+      }`}
     >
       {isActive && (
         <motion.div
