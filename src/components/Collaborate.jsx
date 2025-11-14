@@ -7,7 +7,6 @@ import {
   FaLaptopCode,
   FaSyncAlt,
   FaCheckDouble,
-  FaTools,
   FaMapMarkedAlt,
   FaCreditCard,
   FaLongArrowAltRight,
