@@ -5,78 +5,79 @@
   "navbar.faq": "FAQ",
   "navbar.pricing": "Harga",
 
-  "hero.promo": "Mitra Teknologi Serbaguna Anda",
+  "hero.promo": "Partner Teknologi Serbaguna Anda",
   "hero.title": "Selamat Datang di CareCode Studio",
-  "hero.subtitle": "Kami membangun, memperbaiki, dan meningkatkan kehadiran digital Anda melalui layanan web, IoT, dan perangkat keras.",
+  "hero.subtitle": "Kami membantu mewujudkan kehadiran digital Anda melalui layanan web, aplikasi, IoT, dan perangkat keras.",
   "hero.start": "Mulai Proyek",
   "hero.faq": "FAQ",
 
   "footer.rights": "Seluruh hak cipta dilindungi.",
 
   "services.title": "Layanan Kami",
-  "services.subtitle": "Dari web hingga IoT — wujudkan ide Anda bersama kami.",
+  "services.subtitle": "Solusi lengkap untuk kebutuhan digital dan teknologi Anda.",
   "services.web": "Pembuatan Website",
-  "services.web.desc": "Website modern, cepat, dan responsif untuk brand Anda.",
+  "services.web.desc": "Website modern, cepat, dan responsif yang siap mendukung brand Anda.",
   "services.application": "Pengembangan Aplikasi",
-  "services.application.desc": "Aplikasi mobile & desktop yang powerful sesuai kebutuhan.",
+  "services.application.desc": "Aplikasi mobile & desktop yang powerful dan sesuai kebutuhan.",
   "services.uiux": "Desain UI/UX",
-  "services.uiux.desc": "Antarmuka yang cantik, intuitif, dan berfokus pada pengguna.",
+  "services.uiux.desc": "Tampilan estetik dengan pengalaman pengguna yang mulus.",
   "services.iot": "Internet of Things (IoT)",
-  "services.iot.desc": "Sistem IoT pintar yang menghubungkan perangkat secara mulus.",
+  "services.iot.desc": "Sistem IoT pintar yang menghubungkan perangkat dengan lancar.",
   "services.hardware": "Layanan Perangkat Keras",
-  "services.hardware.desc": "Hardware kustom, perbaikan, dan integrasi.",
+  "services.hardware.desc": "Pembuatan hardware custom, perbaikan, hingga integrasi.",
   "services.automation": "Alur Otomasi",
-  "services.automation.desc": "Otomasi workflow dengan sistem cerdas.",
-  "services.more": "Dan Masih Banyak Lagi",
-  "services.more.desc": "Mari diskusikan proyek Anda — semua bisa diwujudkan.",
-  "services.more.cta": "Ayo diskusi",
-  "services.web.f1": "Responsif & siap SEO",
+  "services.automation.desc": "Optimalkan workflow dengan sistem otomasi cerdas.",
+  "services.more": "Dan Banyak Lagi",
+  "services.more.desc": "Punya ide unik? Yuk kita bahas.",
+  "services.more.cta": "Hubungi Kami",
+
+  "services.web.f1": "Responsif & ramah SEO",
   "services.web.f2": "Performa cepat",
-  "services.web.f3": "Opsi CMS / Headless",
-  
+  "services.web.f3": "Support CMS / Headless",
+
   "services.app.f1": "Lintas platform (iOS, Android, Web)",
-  "services.app.f2": "UX seperti aplikasi native",
+  "services.app.f2": "Pengalaman mirip aplikasi native",
   "services.app.f3": "Integrasi API",
 
-  "services.uiux.f1": "Alur pengguna & Wireframing",
+  "services.uiux.f1": "User flow & wireframing",
   "services.uiux.f2": "Prototipe high-fidelity",
-  "services.uiux.f3": "Sistem desain (Design system)",
+  "services.uiux.f3": "Design system",
 
   "services.iot.f1": "Integrasi perangkat",
   "services.iot.f2": "Protokol MQTT / HTTP",
   "services.iot.f3": "Sinkronisasi data cloud",
 
   "services.hw.f1": "Diagnostik & perbaikan",
-  "services.hw.f2": "PCB kustom / prototipe",
+  "services.hw.f2": "PCB custom / prototipe",
   "services.hw.f3": "Integrasi komponen",
 
-  "services.auto.f1": "Otomatisasi alur kerja bisnis",
-  "services.auto.f2": "Scripting & pemicu kustom",
-  "services.auto.f3": "Pemantauan real-time",
+  "services.auto.f1": "Otomatisasi workflow",
+  "services.auto.f2": "Scripting & trigger custom",
+  "services.auto.f3": "Monitoring real-time",
 
-  "services.more.f1": "Punya proyek kustom? Ayo diskusi.",
+  "services.more.f1": "Punya kebutuhan khusus? Kami siap bantu.",
 
   "why.title": "Kenapa Memilih Kami",
-  "why.subtitle": "Kami menghadirkan kualitas, fleksibilitas, dan dedikasi di setiap proyek.",
-  "why.1.title": "Tim Profesional",
-  "why.1.desc": "Developer dan desainer kami adalah profesional berpengalaman di industri.",
-  "why.2.title": "Harga Terjangkau",
-  "why.2.desc": "Hasil berkualitas tinggi dengan harga bersahabat untuk startup.",
-  "why.3.title": "Cepat & Fleksibel",
-  "why.3.desc": "Pengerjaan tepat waktu dengan fleksibilitas revisi penuh.",
-  "why.4.title": "Permintaan Kustom",
-  "why.4.desc": "Kami menyesuaikan workflow sesuai kebutuhan unik Anda.",
+  "why.subtitle": "Solusi profesional dengan pendekatan fleksibel dan kolaboratif.",
+  "why.1.title": "Tim Berpengalaman",
+  "why.1.desc": "Developer dan desainer yang sudah terbiasa menangani berbagai proyek industri.",
+  "why.2.title": "Harga Bersahabat",
+  "why.2.desc": "Kualitas tinggi dengan biaya yang tetap ramah untuk startup maupun bisnis kecil.",
+  "why.3.title": "Cepat & Adaptif",
+  "why.3.desc": "Proyek dikerjakan tepat waktu dengan ruang revisi yang fleksibel.",
+  "why.4.title": "Custom Sesuai Kebutuhan",
+  "why.4.desc": "Setiap workflow disesuaikan dengan kebutuhan unik Anda.",
 
-"pricing": {
-    "title": "Harga Jelas & Terjangkau",
-    "subtitle": "Dapatkan kualitas premium tanpa menguras kantong. Kami menawarkan harga transparan yang disesuaikan dengan kebutuhan Anda.",
+  "pricing": {
+    "title": "Harga Transparan & Terjangkau",
+    "subtitle": "Kualitas premium tanpa biaya yang memberatkan. Semua harga menyesuaikan kebutuhan proyek Anda.",
     "card": {
-      "title": "Satu Harga Tidak Cocok Untuk Semua",
-      "desc": "Karena setiap proyek itu unik, kami memberikan penawaran khusus setelah memahami tujuan Anda. Tanpa biaya tersembunyi, tanpa kejutan.",
-      "f1": "Estimasi Transparan",
-      "f2": "Jaminan Kualitas",
-      "f3": "Konsultasi Awal Gratis",
-      "cta": "Dapatkan Penawaran Gratis",
+      "title": "Setiap Proyek Punya Ceritanya",
+      "desc": "Kami memberikan penawaran khusus setelah memahami tujuan Anda. Tanpa biaya tambahan, tanpa kejutan.",
+      "f1": "Estimasi jelas & transparan",
+      "f2": "Jaminan kualitas hasil",
+      "f3": "Konsultasi awal gratis",
+      "cta": "Dapatkan Penawaran",
       "start": "Mulai Dari",
       "price": "RP 49.000,-",
       "unit": "untuk tugas sederhana"
@@ -85,7 +86,7 @@
 
   "collaborate": {
     "title": "Cara Kita Berkolaborasi",
-    "subtitle": "Proses transparan dan terstruktur untuk memastikan kesuksesan proyek Anda dari awal hingga akhir.",
+    "subtitle": "Proses kerja yang jelas, rapi, dan gampang diikuti dari awal sampai selesai.",
     "toggle": {
       "software": "Alur Digital (Web, App, IoT)",
       "hardware": "Alur Hardware"
@@ -94,68 +95,68 @@
     "sw": {
       "1": {
         "title": "Konsultasi Awal",
-        "desc": "Kita mulai dengan mendiskusikan ide, tujuan, dan kebutuhan proyek Anda. Ini semua tentang memahami visi Anda."
+        "desc": "Kami mulai dengan memahami ide dan tujuan Anda. Dari sini kami memetakan kebutuhan proyek."
       },
       "2": {
         "title": "Proposal & Kesepakatan",
-        "desc": "Kami berikan proposal rinci (scope, waktu, harga, & DP). Setelah Anda setuju dan membayar DP, kami mulai bekerja."
+        "desc": "Kami menyusun proposal lengkap berisi scope, timeline, dan harga. Pengerjaan dimulai setelah DP disetujui."
       },
       "3": {
-        "title": "Pengembangan & Progres",
-        "desc": "Tim kami mulai bekerja. Kami akan memberikan update rutin sehingga Anda bisa memantau progres proyek."
+        "title": "Pengembangan & Update",
+        "desc": "Tim kami mengerjakan proyek dan memberikan update rutin agar Anda bisa memantau progres."
       },
       "4": {
-        "title": "Peninjauan & Revisi",
-        "desc": "Kami mempresentasikan hasil akhir. Anda meninjau, dan kami melakukan revisi yang diperlukan untuk memastikannya sempurna."
+        "title": "Review & Revisi",
+        "desc": "Hasil diserahkan untuk ditinjau. Revisi dilakukan sesuai kebutuhan hingga semuanya sesuai."
       },
       "5": {
-        "title": "Peluncuran & Pelunasan",
-        "desc": "Setelah Anda 100% puas, kami akan men-deploy proyek dan menyerahkan semua aset setelah pelunasan diselesaikan."
+        "title": "Peluncuran & Finalisasi",
+        "desc": "Setelah final, proyek kami deploy dan semua aset diserahkan setelah pelunasan."
       }
     },
     "hw": {
       "1": {
         "title": "Konsultasi Awal",
-        "desc": "Beri tahu kami masalah hardware atau proyek yang Anda pikirkan. Kami akan menilai situasi dan kebutuhan."
+        "desc": "Ceritakan kebutuhan atau masalah hardware Anda. Kami bantu analisis dan memberi rekomendasi."
       },
       "2": {
         "title": "Meeting & Kesepakatan",
-        "desc": "Kami membahas detail, linimasa, dan memberikan penawaran harga yang jelas. Kita menyepakati persyaratan layanan."
+        "desc": "Bahas detail, waktu pengerjaan, dan penawaran harga yang jelas."
       },
       "3": {
-        "title": "Layanan di Tempat (On-Site) / COD",
-        "desc": "Kami mengatur waktu untuk Cash-on-Delivery (COD) barang atau agar teknisi kami dapat bekerja langsung di lokasi Anda."
+        "title": "Layanan On-Site / COD",
+        "desc": "Pengambilan barang (COD) atau kunjungan teknisi sesuai jadwal yang disepakati."
       },
       "4": {
         "title": "Selesai & Pelunasan",
-        "desc": "Setelah layanan hardware berhasil diselesaikan, Anda melakukan pembayaran penuh langsung di tempat."
+        "desc": "Setelah layanan selesai, pelunasan dilakukan di tempat."
       }
     }
   },
 
   "faq": {
-    "title": "Pertanyaan Umum (FAQ)",
-    "subtitle": "Punya pertanyaan? Kami punya jawaban. Klik bola untuk melihat.",
-    "placeholder": "Klik salah satu bola pertanyaan di atas untuk melihat jawabannya di sini...",
+    "title": "Pertanyaan yang Sering Ditanyakan",
+    "subtitle": "Klik bubble pertanyaan untuk melihat jawabannya.",
+    "placeholder": "Pilih pertanyaan di atas untuk melihat penjelasannya di sini.",
     "q1": {
-      "q": "Layanan apa saja yang ditawarkan?",
-      "a": "Kami menawarkan berbagai layanan digital, termasuk pengembangan Website, Aplikasi (Mobile & Desktop), Desain UI/UX, Internet of Things (IoT), dan Layanan Perangkat Keras. Cek bagian 'Layanan Kami' untuk detailnya!"
+      "q": "Layanan apa saja yang tersedia?",
+      "a": "Kami menyediakan layanan pembuatan Website, Aplikasi, UI/UX, IoT, dan layanan hardware. Cek bagian 'Layanan Kami' untuk detail lengkap."
     },
     "q2": {
       "q": "Berapa biayanya?",
-      "a": "Setiap proyek itu unik. Harga kami mulai dari Rp 49.000,- untuk tugas sederhana. Untuk proyek yang lebih besar, kami akan memberikan penawaran khusus setelah konsultasi awal gratis."
+      "a": "Harga mulai dari Rp 49.000 untuk tugas sederhana. Untuk kebutuhan khusus, kami berikan penawaran setelah konsultasi awal."
     },
     "q3": {
       "q": "Berapa lama pengerjaannya?",
-      "a": "Waktu pengerjaan bergantung pada kompleksitas proyek. Proyek web sederhana bisa memakan waktu beberapa hari hingga seminggu, sementara aplikasi kustom bisa memakan waktu beberapa minggu hingga bulan. Kami akan memberikan estimasi waktu yang jelas dalam proposal kami."
+      "a": "Tergantung kompleksitas. Website sederhana bisa selesai dalam hitungan hari, aplikasi custom bisa memakan waktu beberapa minggu. Estimasi diberikan di awal."
     },
     "q4": {
-      "q": "Apakah saya bisa meminta revisi?",
-      "a": "Tentu saja! Fleksibilitas adalah salah satu keunggulan kami. Proses kami mencakup tahap 'Review & Revisi' di mana Anda dapat memberikan masukan sebelum peluncuran."
+      "q": "Apakah bisa revisi?",
+      "a": "Tentu. Kami menyediakan sesi review & revisi agar hasil akhir sesuai harapan Anda."
     },
     "q5": {
-      "q": "Bagaimana cara memulainya?",
-      "a": "Sangat mudah! Gulir ke bagian 'Cara Kita Berkolaborasi' atau langsung klik tombol 'Mulai Proyek' / 'Hubungi Kami'. Cukup ceritakan ide Anda, dan kami akan memandu Anda melalui langkah selanjutnya."
+      "q": "Bagaimana cara mulai?",
+      "a": "Anda bisa ke bagian 'Cara Kita Berkolaborasi' atau klik tombol 'Mulai Proyek'. Cukup ceritakan kebutuhan Anda, dan kami bantu dari sana."
     }
   }
 }

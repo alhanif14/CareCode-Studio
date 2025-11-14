@@ -7,74 +7,75 @@
 
   "hero.promo": "Your All-in-One Tech Partner",
   "hero.title": "Welcome to CareCode Studio",
-  "hero.subtitle": "We build, fix, and elevate your digital presence with web, IoT, and hardware services.",
+  "hero.subtitle": "We build, fix, and level up your digital presence — websites, IoT, hardware, and everything in between.",
   "hero.start": "Start Project",
   "hero.faq": "FAQ",
 
   "footer.rights": "All rights reserved.",
 
   "services.title": "Our Services",
-  "services.subtitle": "From web to IoT — we bring your ideas to life.",
+  "services.subtitle": "From web to IoT, we turn ideas into real products.",
   "services.web": "Website",
-  "services.web.desc": "Modern, fast, and responsive websites for your brand.",
+  "services.web.desc": "Fast, modern, responsive — built for your brand.",
   "services.application": "Application",
   "services.application.desc": "Powerful mobile & desktop apps tailored to your needs.",
   "services.uiux": "UI/UX Design",
-  "services.uiux.desc": "Beautiful, intuitive, and user-centric interfaces.",
+  "services.uiux.desc": "Clean, intuitive, and user-loving design.",
   "services.iot": "Internet of Things (IoT)",
-  "services.iot.desc": "Smart IoT systems that connect devices seamlessly.",
+  "services.iot.desc": "Smart connected systems that just work.",
   "services.hardware": "Hardware Service",
-  "services.hardware.desc": "Custom hardware, repair, and integration.",
+  "services.hardware.desc": "Custom hardware, repairs, and seamless integrations.",
   "services.automation": "Automation Flow",
-  "services.automation.desc": "Automate your workflow with intelligent systems.",
-  "services.more": "And Many More",
-  "services.more.desc": "Let's discuss your next project — anything is possible.",
+  "services.automation.desc": "Automate your workflow and save more time.",
+  "services.more": "And So Much More",
+  "services.more.desc": "Not sure what you need? Tell us your idea — we’ll make it real.",
   "services.more.cta": "Let's talk",
+
   "services.web.f1": "Responsive & SEO-ready",
-  "services.web.f2": "Fast performance",
+  "services.web.f2": "Optimized performance",
   "services.web.f3": "CMS / Headless options",
   
   "services.app.f1": "Cross-platform (iOS, Android, Web)",
-  "services.app.f2": "Native-like UX",
+  "services.app.f2": "Smooth, native-like experience",
   "services.app.f3": "API integration",
 
-  "services.uiux.f1": "User flows & Wireframing",
-  "services.uiux.f2": "High-fidelity prototype",
+  "services.uiux.f1": "User flows & wireframes",
+  "services.uiux.f2": "High-fidelity prototypes",
   "services.uiux.f3": "Design systems",
 
   "services.iot.f1": "Device integration",
   "services.iot.f2": "MQTT / HTTP protocols",
-  "services.iot.f3": "Cloud data sync",
+  "services.iot.f3": "Cloud sync",
 
-  "services.hw.f1": "Diagnostics & repair",
-  "services.hw.f2": "Custom PCB / prototyping",
+  "services.hw.f1": "Diagnostics & repairs",
+  "services.hw.f2": "Custom PCB & prototypes",
   "services.hw.f3": "Component integration",
 
   "services.auto.f1": "Business workflow automation",
-  "services.auto.f2": "Custom scripting & triggers",
+  "services.auto.f2": "Custom scripts & triggers",
   "services.auto.f3": "Real-time monitoring",
 
-  "services.more.f1": "Custom project? Let's discuss.",
+  "services.more.f1": "Have a custom idea? Let's talk.",
 
   "why.title": "Why Choose Us",
-  "why.subtitle": "We bring quality, flexibility, and dedication to every project.",
+  "why.subtitle": "Quality-driven. Fast. Flexible. Easy to work with.",
   "why.1.title": "Professional Team",
-  "why.1.desc": "Our developers and designers are industry-experienced professionals.",
+  "why.1.desc": "Experienced developers and designers ready to help.",
   "why.2.title": "Affordable Pricing",
-  "why.2.desc": "High-quality results at startup-friendly rates.",
+  "why.2.desc": "Premium results without premium pricing.",
   "why.3.title": "Fast & Flexible",
-  "why.3.desc": "On-time delivery with full revision flexibility.",
-  "why.4.title": "Customizable Request",
-  "why.4.desc": "We adapt our workflow to your unique needs.",
+  "why.3.desc": "On-time delivery with revision flexibility.",
+  "why.4.title": "Fully Customizable",
+  "why.4.desc": "We tailor everything to match your needs.",
 
   "pricing": {
     "title": "Clear & Affordable Pricing",
-    "subtitle": "Get premium quality without breaking the bank. We offer transparent pricing tailored to your exact needs.",
+    "subtitle": "Premium results, transparent pricing. No hidden fees.",
     "card": {
-      "title": "One Price Doesn't Fit All",
-      "desc": "Because every project is unique, we provide a custom quote after understanding your goals. No hidden fees, no surprises.",
+      "title": "No One-Size-Fits-All",
+      "desc": "Every project is unique — we calculate your price based on your goals. Simple, honest, transparent.",
       "f1": "Transparent Estimates",
-      "f2": "Guaranteed Quality",
+      "f2": "Quality Guarantee",
       "f3": "Free Initial Consultation",
       "cta": "Get a Free Quote",
       "start": "Starts From",
@@ -85,77 +86,79 @@
 
   "collaborate": {
     "title": "How We Collaborate",
-    "subtitle": "A transparent and structured process to ensure your project's success from start to finish.",
+    "subtitle": "A transparent, simple flow to get your project from idea to launch.",
     "toggle": {
       "software": "Digital Flow (Web, App, IoT)",
       "hardware": "Hardware Flow"
     },
     "contact_us": "Contact Us",
+
     "sw": {
       "1": {
         "title": "Initial Consultation",
-        "desc": "We start by discussing your project idea, goals, and requirements. It's all about understanding your vision."
+        "desc": "We start with your idea — goals, needs, vision. We're here to understand first."
       },
       "2": {
         "title": "Proposal & Agreement",
-        "desc": "We provide a detailed proposal covering scope, timeline, price, and terms. After you agree and pay the DP, we start."
+        "desc": "We deliver a detailed plan: scope, price, timeline. After you agree & pay the DP, we begin."
       },
       "3": {
         "title": "Development & Progress",
-        "desc": "Our team gets to work. We provide regular updates so you can track the progress every step of the way."
+        "desc": "We build your project and send regular updates so you always stay in the loop."
       },
       "4": {
         "title": "Review & Revisions",
-        "desc": "We present the final product. You review it, and we perform any necessary revisions to ensure it's perfect."
+        "desc": "You review everything. We revise until it fits your expectations."
       },
       "5": {
         "title": "Launch & Final Payment",
-        "desc": "Once you're 100% satisfied, we deploy the project and hand over all assets after the final payment is settled."
+        "desc": "Once you're fully satisfied, we launch and hand over all assets."
       }
     },
+
     "hw": {
       "1": {
         "title": "Initial Consultation",
-        "desc": "Tell us about the hardware issue or project you have in mind. We'll assess the situation and requirements."
+        "desc": "Tell us the hardware issue or idea you have. We'll assess the situation right away."
       },
       "2": {
         "title": "Meeting & Agreement",
-        "desc": "We discuss the details, timeline, and provide a clear price quote. We agree on the terms for the service."
+        "desc": "We discuss details, timeline, and pricing — clear and upfront."
       },
       "3": {
         "title": "On-Site or COD Service",
-        "desc": "We arrange a time for Cash-on-Delivery (COD) or for our technician to work on-site at your location."
+        "desc": "We come to your location or proceed via COD, whichever works best for you."
       },
       "4": {
         "title": "Completion & Payment",
-        "desc": "Once the hardware service is successfully completed, you make the full payment on the spot."
+        "desc": "Once everything is done, you pay on the spot."
       }
     }
   },
 
   "faq": {
-    "title": "Frequently Asked Questions (FAQ)",
-    "subtitle": "Got questions? We've got answers. Click a bubble to find out.",
-    "placeholder": "Click one of the question bubbles above to see the answer here...",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Got questions? Just tap a bubble above.",
+    "placeholder": "Tap any question bubble above to see the answer here...",
     "q1": {
       "q": "What services do you offer?",
-      "a": "We offer a wide range of digital services, including Website development, Applications (Mobile & Desktop), UI/UX Design, Internet of Things (IoT), and Hardware Services. Check our 'Services' section for details!"
+      "a": "We offer Website development, Applications (Mobile/Desktop), UI/UX Design, IoT solutions, and Hardware services."
     },
     "q2": {
       "q": "How much does it cost?",
-      "a": "Every project is unique. Our prices start from IDR 49K for simple tasks. For larger projects, we provide a custom quote after a free initial consultation."
+      "a": "Prices start from IDR 49K for simple tasks. Bigger projects get custom quotes after a free consultation."
     },
     "q3": {
       "q": "How long does it take?",
-      "a": "Turnaround time depends on project complexity. A simple website might take a few days to a week, while a custom app could take several weeks or months. We'll provide a clear timeline in our proposal."
+      "a": "Depends on the project. Simple web takes days, custom apps take weeks or months. We’ll give a clear timeline."
     },
     "q4": {
       "q": "Can I request revisions?",
-      "a": "Absolutely! Flexibility is one of our strengths. Our process includes a 'Review & Revisions' stage where you can provide feedback before launch."
+      "a": "Yes! Our workflow includes a full review & revision stage before launch."
     },
     "q5": {
       "q": "How do I get started?",
-      "a": "It's easy! Scroll to the 'How We Collaborate' section or just click the 'Start Project' / 'Contact Us' button. Simply tell us your idea, and we'll guide you through the next steps."
+      "a": "Scroll to 'How We Collaborate' or click 'Start Project'. Tell us your idea — we’ll guide you from there."
     }
   }
 }
